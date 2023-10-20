@@ -1,15 +1,15 @@
 import matplotlib.pyplot as plt
 
 # eixo x num_linhas
-x = [10, 20, 50, 100, 200, 300, 400, 600, 700, 800, 1000, 1300, 1500, 1700, 2000, 2264]
+x = [10, 30, 50, 100, 200, 300, 400, 600, 700, 800, 1000, 1300, 1500, 1700, 2000, 2264]
 
 # eixo y
 mem_orientdb = [387.1, 387.1, 387.1, 387.1, 387.1, 387.1, 387.8, 387.7, 404.0, 453.4, 463.7, 480.1, 506.9, 647.7, 647.7, 827.2]
 
 plt.style.use('seaborn-v0_8')
-plt.bar(x=x, height=mem_orientdb, width=3)
+plt.bar(x=x, height=mem_orientdb, width=10)
 #marcações do eixo x
-plt.xticks(x, (10, 20, 50, 100, 200, 300, 400, 600, 700, 800, 1000, 1300, 1500, 1700, 2000, 2264), rotation=30, horizontalalignment='right')
+plt.xticks(x, (10, 20, 50, 100, 200, 300, 400, 600, 700, 800, 1000, 1300, 1500, 1700, 2000, 2264), rotation=90, horizontalalignment='right', fontsize=8)
 
 plt.xlabel('Num linhas')
 
